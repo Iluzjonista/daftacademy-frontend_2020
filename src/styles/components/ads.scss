@@ -1,0 +1,63 @@
+.ads {
+  padding: 50px 0;
+  &__grid {
+    display: grid;
+    grid-template-areas:
+      "left main right"
+      "left footer footer";
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    @media (max-width: $medium-width) {
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "left"
+        "main"
+        "right" 
+        "footer";
+    }
+  }
+  &__item {
+    position: relative;
+    &--first {
+      grid-area: left;
+    }
+    &--second {
+      grid-area: main;
+    }
+    &--third {
+      grid-area: right;
+    }
+    &--fourth {
+      grid-area: footer;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $greyish-brown;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    div {
+      margin: 10px 0;
+    }
+    a {
+      font-size: 13px;
+      text-decoration: none;
+      color: $greyish-brown;
+      &:hover {
+        border-bottom: 2px solid $greyish-brown;
+      }
+    }
+  }
+}
+
+.img__ads {
+  width: 100%;
+  height: 100%;
+}

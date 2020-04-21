@@ -1,0 +1,81 @@
+.newsletter {
+  padding-bottom: 96px;
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+  }
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $greyish-brown;
+    padding: 35px 0 69px;
+  }
+  &__form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    @media (max-width: $medium-width) {
+      width: 90%;
+    }
+  }
+  &__input {
+    margin: auto;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    &:focus {
+      outline: none;
+    }
+    &:focus ~ label {
+      display:none;
+    }
+  }
+  &__label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  &__submit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    border: none;
+    font-weight: 700;
+    background-color: #fff;
+
+    cursor: pointer;
+  }
+  &__spam {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $greyish-brown;
+    margin-top: 24px;
+  }
+}

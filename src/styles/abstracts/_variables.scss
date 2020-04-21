@@ -1,0 +1,27 @@
+/// Container's maximum width
+/// @type Length
+$max-width: 1326px !default;
+$big-width: 1280px;
+$laptop-width: 1024px;
+$break-width: 968px;
+$medium-width: 768px;
+$phone-width: 560px;
+$small-width: 320px;
+$min-width: 250px;
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "tablet": 768px,
+  "desktop": 968px,
+) !default;
+
+//colors
+$navdark: #151515;
+$color-white: #ffffff;
+$color-black: #000000;
+$background-color: #263a49;
+$black-three: #111111;
+$black: #151515;
+$greyish-brown: #454545;
+$brown-grey: #959595;

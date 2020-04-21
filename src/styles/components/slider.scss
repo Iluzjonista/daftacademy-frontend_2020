@@ -1,0 +1,45 @@
+.slider {
+  background-color: $background-color;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  &__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__arrow {
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 20px 15px;
+  }
+  &__slider {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__img {
+    margin: 50px 15px;
+    cursor: pointer;
+    position: relative;
+    @media (max-width: $medium-width) {
+      margin: 50px 2px;
+    }
+  }
+  &__text {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $greyish-brown;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    div {
+      margin: 10px 0;
+    }
+  }
+}
