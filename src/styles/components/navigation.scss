@@ -1,8 +1,9 @@
 .navigation {
   height: 550px;
-  background-image: url("https://via.placeholder.com/1920x550.png");
+  background-image: url("https://picsum.photos/1920/550");
   background-position: center center;
   padding: 34px 0;
+  background-size: cover;
   &__container {
     display: flex;
     flex-direction: row;

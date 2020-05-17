@@ -1,4 +1,6 @@
 import "./styles/style.sass";
+
+import { newData } from "./api";
 import {
   slider,
   changeClass,
@@ -8,7 +10,8 @@ import {
   showAllProducts,
 } from "./functions";
 
-document.addEventListener('DOMContentLoaded', () => {
+newData();
+document.addEventListener("DOMContentLoaded", () => {
   // console.log("DOM fully loaded and parsed");
   hideProducts();
   changeClass();
@@ -17,3 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollToTop();
   showAllProducts();
 });
+

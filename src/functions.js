@@ -77,6 +77,19 @@ function hideProducts() {
   };
 }
 
+// function showAllProducts() {
+//   let items = document.querySelectorAll(".products__item")[0];
+//   const btn = document.querySelector(".arrivals__button");
+//   btn.addEventListener("click", () => {
+//     for (let i = 0; i < 4; i++) {
+//       const newItem = items.cloneNode(true);
+//       btn.before(newItem);
+//     };
+//     btn.classList.add("hide");
+//   });
+// }
+
+
 function showAllProducts() {
   let items = document.querySelectorAll(".products__item:nth-of-type(1n+9)");
   const btn = document.querySelector(".arrivals__button");
